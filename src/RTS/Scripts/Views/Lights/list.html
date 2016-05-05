@@ -1,0 +1,29 @@
+﻿<div>
+    <h1>Lights list</h1>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Id</th>
+                <th>Label</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="light in lights">
+                <td>
+                    <a href="/lights/delete/{{ light.Id }}">Delete</a>
+                </td>
+                <td>
+                    <a href="/lights/edit/{{ light.Id }}">{{ light.Id }}</a>
+                </td>
+                <td>
+                    <a href="/lights/edit/{{ light.Id }}">{{ light.Label }}</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        <a href="/lights/add" class="btn btn-primary">New Light</a>
+    </p>
+</div>

@@ -1,0 +1,16 @@
+﻿<div ng-switch on="isEditing">
+    <h1 ng-switch-when="true">{{ light.Label }}</h1>
+    <h1 ng-switch-default>Add a new light</h1>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <form ng-submit="save()">
+            <div class="form-group">
+                <label for="Label">Label</label>
+                <input name="Label" class="form-control" placeholder="Enter label" ng-model="light.Label" />
+            </div>
+            <a href="/lights" class="btn btn-default">Cancel</a>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</div>
