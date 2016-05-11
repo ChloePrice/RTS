@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using RTS.Models;
+using Microsoft.Data.Entity;
+
+
 
 namespace RTS
 {
@@ -17,7 +20,8 @@ namespace RTS
         {
             // Set up configuration sources.
             var builder = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json");
+                .AddJsonFile("appsettings.json")
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
             if (env.IsEnvironment("Development"))
             {
@@ -38,7 +42,7 @@ namespace RTS
             services.AddApplicationInsightsTelemetry(Configuration);
             services.AddEntityFramework()
                 .AddSqlServer()
-                .AddDbContext<RtsContext>();
+                .AddDbContext<RtsContext>(options => options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
             services.AddMvc();
         }
 
