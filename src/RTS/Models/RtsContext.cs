@@ -8,6 +8,17 @@ namespace RTS.Models
 {
     public class RtsContext : DbContext
     {
+        public static bool _created = false;
+
+        public RtsContext()
+        {
+            if (!_created)
+            {
+                _created = true;
+                Database.EnsureCreated();
+            }
+        }
+
         public DbSet<Light> Lights { get; set; }
     }
 }
