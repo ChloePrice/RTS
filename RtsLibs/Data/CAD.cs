@@ -4,23 +4,16 @@ using System.Linq;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace RTS.Data
+namespace RtsLibs.Data
 {
     public class CAD
     {
         //Injected.
         public SqlConnection Connection { get; }
-        public static DbName DEFAULT_DB_NAME = DbName.RtsDb;
-        public static AuthenticationMethod DEFAULT_DB_AUTHENTICATION_METHOD = AuthenticationMethod.SSTrustConnection;
 
-        public CAD()
+        public CAD(string coString)
         {
-            Connection = ConnectionFactory.create(DEFAULT_DB_NAME, DEFAULT_DB_AUTHENTICATION_METHOD);
-        }
-
-        public CAD(DbName dbName, AuthenticationMethod method, string username = null, string password = null)
-        {
-            Connection = ConnectionFactory.create(dbName, method, username, password);
+            Connection = new SqlConnection(coString);
         }
 
 
@@ -35,6 +28,7 @@ namespace RTS.Data
             Connection.Open();
             if (returnValue)
             {
+                command.Prepare();
                 SqlDataReader r = command.ExecuteReader();
                 while (r != null && r.Read())
                 {

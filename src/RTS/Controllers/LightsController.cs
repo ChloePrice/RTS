@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
 using RTS.Data;
 using RTS.Data.Models;
+using System.Data.SqlClient;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -18,7 +19,9 @@ namespace RTS.Controllers
         public IEnumerable<Light> Get()
         {
             CAD cad = new CAD("Data Source=.\\SQLEXPRESS;Initial Catalog=RtsDb;Integrated Security=True;");
-            cad.exec("Test", null);
+            var res = cad.exec("SELECT * FROM Light AS l WHERE l.id = @id", CAD.AsParams(new SqlParameter("@id", 1)), true);
+            //cad.executeReturnProcedure("add_light", CAD.AsParams(new SqlParameter("name", "Nomad")));
+            //return res.First().;
             return null;
         }
 

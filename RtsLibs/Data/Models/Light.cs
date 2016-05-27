@@ -3,17 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RTS.Data.Models
+namespace RtsLibs.Data.Models
 {
-    public class Light : IModel
+    public class Light
     {
         public int Id { get; set; }
         public string Label { get; set; }
-
-        public Light()
-        {
-            this.Label = "Not Loaded...";
-        }
 
         public void configure(LightConfig pattern)
         {
