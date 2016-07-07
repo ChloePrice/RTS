@@ -9,7 +9,7 @@
   >To be honnest, all this smart-light-thing isn't really NEEDED to live. Indeed, you just need a place to sleep, something to eat and drink and you're good. But yet, all that stuff is hella cool, isn't it? You and people have a party at home? Tinkle! All the fucking light's of your house are turning into wonderful colors. AMBIANCE. Imagine all these lighted bands you can put anywhere (under the sofa!).
 
 ## Material available :
-  - raspberry pi 1 type B (I'm so eager to switch on a PI 2 with a windows server)
+  - raspberry pi 1 type B (I'm so eager to switch on a PI 3 with a windows server)
   - arduino board (need to pick an alim though)
   
 ## Material required :
