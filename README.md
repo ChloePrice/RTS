@@ -41,7 +41,7 @@ __Battery Loading :__ AS a third possibility, I use to load my phone battery whi
 According to my location (got from phone), Jinx sould be able to know when the sunset takes place (an API can get that for me). So that she (propose?) turns on the lights if I'm in the room.
 
 ## NFC tags
-I think having several NFC tags in the room could be r eally useful... Think about it.
+I think having several NFC tags in the room could be really useful... Think about it.
 - Drop your phone on a tag and change the ambiance.
 
 ## Requirements
