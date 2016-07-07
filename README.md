@@ -52,7 +52,7 @@ I think having several NFC tags in the room could be really useful... Think abou
  
 ## Technology choices
   __HUE__
-  Hue may be a **little bit expansive**. However it has a hella well-provided API which should perfectly fit my present and future needs. An important point is that Hue is working over a wifi bridge where all the hue elements are connected. This is great since I don't want my phone to just be a remote-control, by using the Hue's API, I can give order to every single part of the system through the hue bridge so that my raspberry can control everything. An other point is that, as it's a famous brand, there are more chance that the products and the API support won't be discontinued in the futur.
+  Hue may be a **little bit expensive**. However it has a hella well-provided API which should perfectly fit my present and future needs. An important point is that Hue is working over a wifi bridge where all the hue elements are connected. This is great since I don't want my phone to just be a remote-control, by using the Hue's API, I can give order to every single part of the system through the hue bridge so that my raspberry can control everything. An other point is that, as it's a famous brand, there are more chance that the products and the API support won't be discontinued in the futur.
 
 >There are some alternative to Hue (one is cheaper) but I really need to know if I can do everything I want. http://www.makeuseof.com/tag/philips-hue-alternatives/
 
