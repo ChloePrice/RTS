@@ -4,7 +4,7 @@
 
 
 ### Just pined
-- I think getting some LED stuff would be great to create an better atmosphere. Hue should have some. Have a look, must not be expensive. (EDIT : YES IT IS)
+- I think getting some LED stuff would be great to create a better atmosphere. Hue should have some. Have a look, must not be expensive. (EDIT : YES IT IS)
 
   >To be honnest, all this smart-light-thing isn't really NEEDED to live. Indeed, you just need a place to sleep, something to eat and drink and you're good. But yet, all that stuff is hella cool, isn't it? You and people have a party at home? Tinkle! All the fucking light's of your house are turning into wonderful colors. AMBIANCE. Imagine all these lighted bands you can put anywhere (under the sofa!).
 
