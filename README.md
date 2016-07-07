@@ -20,14 +20,14 @@
 So as to have a very cool and peaceful morning I need a very smart alarm :3. I need to program Jinx so as she :
   - knows when am going to bed (rounded to 5 minutes)
   - knows how long I'd like to sleep
-  - wakes me up smoothly at the determined hour with quiet music (which sound louder and louter but not too much) and relaxing light fade in.
+  - wakes me up smoothly at the determined hour with quiet music (which sound louder and louder but not too much) and relaxing light fade in.
   - what about a weather option to show on demand what the weather like?!
   - obviously jinx need to be able to provide gaming | working | watching moovie | ...
 
-## How does Jinx knows that I've just went to bed :
->I need to find the perfect solution for this... So there is two good solutions that came to my mind. The first one isn't perfect enough and the second add some constraint. I think implementing all of them can be funny but to start one is good enough.
+## How does Jinx knows that I've just gone to bed :
+>I need to find the perfect solution for this... So there is two good solutions that came to my mind. The first one isn't perfect enough and the second add some constraints. I think implementing all of them could be funny but one is good enough to start.
 
-__Phone inactivity :__ since I'm not a sleepwalker, I don't use my phone while snoring so that if I haven't use it for an hour, I may be sleeping. Jinx has to detect this activity period so as to know I MAY be sleeping. If inactivity is extended to 4 hours then I MUST be sleeping and the process is enabled. If the phone is use more than 30 secondes, the process is silently cancelled (just waking up to check the time...). Setting this logic up according to what time it is must be quite an IA thing but should be ok to implement. The main problem is about the exact time I went to bed, because it can't be determined with the precision that the specifications require unless I check my phone a last time just before sleeping... Maybe I do, but it's not a truly sure point.
+__Phone inactivity :__ since I'm not a sleepwalker, I don't use my phone while snoring so that if I haven't use it for an hour, I may be sleeping. Jinx has to detect this activity period so as to know I MAY be sleeping. If inactivity is extended to 4 hours then I MUST be sleeping and the process is enabled. If the phone is used more than 30 secondes, the process is silently cancelled (just waking up to check the time...). Setting this logic up according to what time it is must be quite an IA thing but should be ok to implement. The main problem is about the exact time I went to bed, because it can't be determined with the precision that the specifications require unless I check my phone a last time just before sleeping... Maybe I do, but it's not a truly sure point.
 
 __NFC Tag :__ I'm used to sleep by putting my phone at the same place, near my bed... So if my phone is here, I must be sleeping. What if I'm drunk though? I maybe won't put my phone at the right place...
 
@@ -52,7 +52,7 @@ I think having several NFC tags in the room could be r eally useful... Think abo
  
 ## Technology choices
   __HUE__
-  Hue may be a **little bit expansive**. However it has a hella well-provided API which should perfectly fit my present and future needs. An important point is that Hue is working over a wifi bridge where all the hue elements are connected. This is great since I don't want my phone to just be a telecomande, by using the Hue's API, I can give order to every single part of the system through the hue bridge so that my raspberry can control everything. An other point is that, as it's a famous brand, there are more chance that the products and the API support won't be discontinued in the futur.
+  Hue may be a **little bit expansive**. However it has a hella well-provided API which should perfectly fit my present and future needs. An important point is that Hue is working over a wifi bridge where all the hue elements are connected. This is great since I don't want my phone to just be a remote-control, by using the Hue's API, I can give order to every single part of the system through the hue bridge so that my raspberry can control everything. An other point is that, as it's a famous brand, there are more chance that the products and the API support won't be discontinued in the futur.
 
 >There are some alternative to Hue (one is cheaper) but I really need to know if I can do everything I want. http://www.makeuseof.com/tag/philips-hue-alternatives/
 
@@ -64,7 +64,7 @@ Here is what's really important :
 - Privacy DOES matter. What about information collection? Does the brand collect anything? No need so I don't want it to.
 
 __What about my server techno?__
-Obviously, AN NOT SURE. If all I need is a quick bootable control pad/IA over web protocol, Rails should fit perfectly.
+Obviously, AM NOT SURE. If all I need is a quick bootable control pad/IA over web protocol, Rails should fit perfectly.
 But what If I want a really BIG architecture? Like a 9-layer scheme with MOM as middleware... NAH, just a simple web app should be OK since Rails is scalable enough. 
   
 ## Phototherapy
