@@ -1,0 +1,20 @@
+{
+        "name": "Unamed group",
+        "lights": [
+        ],
+        "type": "LightGroup",
+        "action": {
+            "on": false,
+            "bri": 254,
+            "hue": 10000,
+            "sat": 254,
+            "effect": "none",
+            "xy": [
+                0.5,
+                0.5
+            ],
+            "ct": 250,
+            "alert": "select",
+            "colormode": "hs"
+        }
+}

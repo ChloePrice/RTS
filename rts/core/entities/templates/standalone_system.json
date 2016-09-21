@@ -1,0 +1,15 @@
+{
+    "id" : -1,
+    "name": "An unamed standalone system",
+    "status": 500,
+    "definition": {
+        "reference": null,
+        "type": "undefinded",
+        "componentInfo" : {}
+    },
+    "initOn": null,
+    "createdOn": null,
+    "intenseModePossible": true,
+    "parent": {},
+    "children": []
+}

@@ -1,0 +1,23 @@
+ {
+    "state": {
+        "on": false,
+        "bri": null,
+        "hue": null,
+        "sat": null,
+        "effect": null,
+        "xy": [
+            0.00,
+            0.00
+        ],
+        "ct": null,
+        "alert": null,
+        "colormode": "xy",
+        "reachable": false
+    },
+    "type": null,
+    "name": "unamed hue light",
+    "modelid": null,
+    "manufacturername": null,
+    "uniqueid": null,
+    "swversion": null
+	}
