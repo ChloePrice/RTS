@@ -94,7 +94,9 @@ links:
   - http://www.lumie.com/blogs/quick-guides/6302482-light-therapy-for-better-sleep
 
 #EVOLUTION
+
 ##About the rooms
+
 - The lights will be part of groups called __room__.
 - A room is owned by a user. 
 - The __owner__ can authorized other users to use the most of the functionnalities of the room as a __guest__.
@@ -113,6 +115,7 @@ Only a **god_powers** roled user can change a **room_owner**.
 - [ ] See with Devise if there is a point to add a namespace in the API path to handle access control.
 
 ##Lights control  
+
 |description|method|path|parameters|returned value|required role|
 |-----------|------|----|----------|-------------------|--------------|
 |Turn on/off a specific light|PATCH|/api/lights/[id]|boolean:on|JSON:object|special:room_owner|
@@ -121,6 +124,7 @@ Only a **god_powers** roled user can change a **room_owner**.
 |Print all info about every light which is not affected to a room yet|GET|/api/lights|nil:nil|JSON:object|god_powers|
 
 ##Room control
+
 |description|method|path|parameters|returned value|required role|
 |-----------|------|----|----------|-------------------|--------------|
 |Turn on all the lights of a room|PATCH|/api/room/[id]|boolean:on|JSON:object|special:room_owner, special:room_guest|
@@ -135,20 +139,24 @@ Only a **god_powers** roled user can change a **room_owner**.
 |Save an ambiance to the room's available ones|POST|/api/room/[id]/ambiances/add|JSON:ambiance|JSON:object|special:room_owner|
 
 ##Ambiance Control
+
 |description|method|path|parameters|returned value|required role|
 |-----------|------|----|----------|-------------------|--------------|
 |Get the current ambiance of a room|GET|/api/room/[id]/guests/add|int:id_user|JSON:object|special:room_owner|
 
 ##Material
+
 Can be HELLA cool to add a material management. Like this item can support XXVolt zith a XX watt power, etc.
 
 ##AI Control
+
 |description|method|path|parameters|returned value|required role|
 |-----------|------|----|----------|-------------------|--------------|
 |Print AI config file|GET|/api/ai/config|nil:nil|JSON:object|jinx_master|
 |Replace old AI config file|POST|/api/ai/config|JSON:object|JSON:object|jinx_master|
 
 ##User Control
+
 |description|method|path|parameters|returned value|required role|
 |-----------|------|----|----------|-------------------|--------------|
 |list all authorized users|GET|/api/users/|nil:nil|JSON:object|user_management|
