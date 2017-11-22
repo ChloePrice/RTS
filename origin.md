@@ -1,3 +1,5 @@
+This file describe the original idea
+
 # JINX - Rise the sun
 
 ![test img](http://k31.kn3.net/taringa/5/7/8/B/7/9/EduardoKpoxD/1E7.jpg)
